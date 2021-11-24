@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link href="styles/index2.css" rel="stylesheet" />
+        <title>Problem Statement 2</title>
+    </head>
+    <body>
+        <header>
+
+            <div class="container">
+                <div class="menulogo1">
+                    <img src="images/download.png">
+                </div>
+                <div class="logo">
+                    <h1 style="color: white; text-align:center; font-size: 21px;">Finding MIN MAX from an array</h1>
+                </div>
+            </div>
+        </header>
+        <aside>
+            <h2>Problem Statement 02:</h2>
+            <h3>Write a program in any language to find the maximum and minimum element in an array.</h3>
+        </aside>
+
+        <section class="Sample">
+            <div class="container">
+                <b>Sample Input : </b><br>
+                <kbd>5 <br>
+                    48 5 12 95 8 10 
+                </kbd>
+                <br><br>
+                <b>Sample Output : </b><br>
+                <samp>
+                    Min: 5<br>
+                    Max: 95<br>
+                </samp><br>
+                <br>
+                <b>Sample Code in C:</b>
+            </div>
+        </section>
+
+        <section>
+        <div class="container" style=" float: left;">
+            <pre style="margin-top: 362px; background-color:rgb(7, 8, 10); padding: 0px; padding-right: 615px;">
+                <code style="color: green; font-size:17px;">
+                #include < bits/stdc++.h >
+                using namespace std ;
+        
+                int main(){
+                    int n;
+                    cin >> n ;
+                    vector < int > v(n);
+                    for(int i=0 ; i < n ; i++)
+                        cin >> v[i];
+                    int mx = v[0] , mn = v[0];
+                    for(int i=0 ; i < n ; i++){
+                        mx = max(mx , v[i]);
+                        mn = min(mn , v[i]);
+                    }
+                    cout<<"Min: %d",min<<\n;
+                    cout<<"Max: %d",max<<\n;
+                    return 0;
+                }
+                </code>
+            </pre>
+
+            <br>
+            <br>
+        </div>
+
+        <section class="container">
+            <div class="Feed" style="width: 20%; margin-right: 30%;">
+                
+   
+                <b>variable Used :</b> <br>
+                <var>int v,i,n,mn,mx</var> are the variable used for these code<br><br>
+                <b>Time Complexity :</b><br>
+                <small> O(n)</small><br><br>
+                <b>Space Complexity :</b><br>
+                <small> O(1)</small><br><br>
+                <b>Reference :</b><br>
+                <a href="https://www.geeksforgeeks.org/">Geeks for Geeks</a>
+            </div>
+        </section>
+    </body>
+</html>
